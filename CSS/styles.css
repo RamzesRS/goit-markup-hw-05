@@ -127,9 +127,16 @@ body {
 
 /* -------------HERO SECTION------------- */
 .hero-section {
-	background-color: #2F303A;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img/hero-img.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 	text-align: center;
 	padding: 200px 0;
+	width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .section {
@@ -142,7 +149,7 @@ body {
 	font-size: 44px;
 	line-height: 1.36;
 	text-align: center;
-	max-width: 600px;
+	max-width: 696px;
 	letter-spacing: 0.06em;
 	padding: 0;
 	margin-bottom: 30px;
@@ -299,6 +306,26 @@ body {
 	letter-spacing: 0.03em;	
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 16px;
+	}
+
+	.team-soclist {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+
+	.team-socitem {
+		width: 44px;
+		height: 44px;
+	}
+	.team-soclink {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: tomato;
+		border-radius: 50%;
 	}
 
 /* -------------FOOTER------------- */
