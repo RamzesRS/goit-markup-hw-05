@@ -196,7 +196,7 @@ body {
 /* -------------SECTION OUR BENEFITS------------- */
 
 .benefits {
-  background-color: var(--body-color);
+  background-color: #FFFFFF;
 }
 
 .general-title {
@@ -234,6 +234,20 @@ body {
 .benefit-item {
 }
 
+.benefits-box {
+	display: flex;
+	width: 270px;
+	height: 120px;
+	background-color: #F5F4FA;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	align-items: center;
+  justify-content: center;
+}
+
+.benefit-icon {
+}
+
 .general-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -253,7 +267,7 @@ body {
 /* -------------SECTION WhAT WE DO------------- */
 
 .whatwedo-section {
-  background-color: var(--body-color);
+  background-color: #FFFFFF;
   padding-bottom: 94px;
 }
 
@@ -358,6 +372,39 @@ body {
   padding-bottom: 94px;
 }
 
+.our-client-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.our-client-item {
+	width: 170px;
+  height: 92px;
+}
+
+.our-client-link {
+	width: 100%;
+  height: 100%;
+	border: #AFB1B8 1px solid;
+	border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-client-icon {
+	fill: #AFB1B8;
+}
+
+.our-client-link:hover {
+	border: #2196F3 1px solid;
+}
+
+.our-client-link:hover .our-client-icon {
+	fill: #2196F3
+	}
+
 /* -------------FOOTER------------- */
 
 .footer {
@@ -413,6 +460,33 @@ body {
 .address-contact:hover,
 .address-contact:focus {
   color: var(--hov-foc-color);
+}
+
+.footer-soc-container {
+	display: flex;
+  justify-content: center;
+	/* padding: 78px 756px 94px 638px; */
+}
+
+.footer-heading {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.footer-soclist {
+	display: flex;
+}
+.footer-socitem {
+}
+.footer-soclink {
+	display: flex;
+}
+.footer-soc-icon {
 }
 
 /* -------------MAIN PORTFOLIO------------- */
