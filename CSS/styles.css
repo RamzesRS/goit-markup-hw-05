@@ -108,6 +108,7 @@ body {
   display: flex;
   margin-left: auto;
   gap: 50px;
+  align-items: baseline;
   /* list-style-type: none;
 	margin: 0;
 	padding: 0; */
@@ -121,17 +122,25 @@ body {
 }
 
 .contact-item-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--main-color);
 }
 
 .contact-icon {
-	fill: #757575;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
-.contact-item-link:hover ,
+.contact-item-link:hover,
 .contact-item-link:focus {
   color: var(--hov-foc-color);
+}
+
+.contact-item-link:hover,
+.contact-item-link:focus .contact-icon {
+  fill: #2196f3;
 }
 
 /* -------------MAIN FOR HOMEPAGE------------- */
@@ -200,7 +209,7 @@ body {
 /* -------------SECTION OUR BENEFITS------------- */
 
 .benefits {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .general-title {
@@ -239,13 +248,13 @@ body {
 }
 
 .benefits-box {
-	display: flex;
-	width: 270px;
-	height: 120px;
-	background-color: #F5F4FA;
-	border-radius: 4px;
-	margin-bottom: 30px;
-	align-items: center;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
   justify-content: center;
 }
 
@@ -271,7 +280,7 @@ body {
 /* -------------SECTION WhAT WE DO------------- */
 
 .whatwedo-section {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-bottom: 94px;
 }
 
@@ -383,31 +392,31 @@ body {
 }
 
 .our-client-item {
-	width: 170px;
+  width: 170px;
   height: 92px;
 }
 
 .our-client-link {
-	width: 100%;
+  width: 100%;
   height: 100%;
-	border: #AFB1B8 1px solid;
-	border-radius: 4px;
+  border: #afb1b8 1px solid;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .our-client-icon {
-	fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .our-client-link:hover {
-	border: #2196F3 1px solid;
+  border: #2196f3 1px solid;
 }
 
 .our-client-link:hover .our-client-icon {
-	fill: #2196F3
-	}
+  fill: #2196f3;
+}
 
 /* -------------FOOTER------------- */
 
@@ -418,8 +427,9 @@ body {
 }
 
 .footer-items {
-	display: flex;
-	gap: 70px;
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
 }
 
 .footer-studio {
@@ -474,42 +484,42 @@ body {
 }
 
 .footer-soc-container {
-	padding-top: 18px;
+  /* padding-top: 18px; */
 }
 
 .footer-heading {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer-soclist {
-	display: flex;
-	gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .footer-socitem {
-	width: 44px;
+  width: 44px;
   height: 44px;
 }
 
 .footer-soclink {
-	width: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-	background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-icon {
-	fill: #FFFFFF
+  fill: #ffffff;
 }
 
 .footer-soclink:hover {
@@ -518,7 +528,6 @@ body {
 .footer-soclink:hover .footer-soc-icon {
   fill: #ffffff;
 }
-
 
 /* -------------MAIN PORTFOLIO------------- */
 
@@ -574,6 +583,8 @@ body {
 .portfolio-btm:focus {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .porfolio-descr {
@@ -589,6 +600,17 @@ body {
 .descr-item {
   display: block;
   background-color: #eeeeee;
+}
+
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-descriprion {
