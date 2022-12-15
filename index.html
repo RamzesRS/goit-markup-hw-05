@@ -27,7 +27,7 @@
           <!-- <img src="./images/web-studio-logo.svg" alt="website logo"> -->
           <ul class="nav-items container-header">
             <li class="nav-item">
-              <a class="nav-item-links" href="./index.html">Студія</a>
+              <a class="nav-item-links current" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
               <a class="nav-item-links" href="./portfolio.html">Портфоліо</a>
@@ -59,7 +59,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Альтернатива: Заголовки H3 можна зробити тільки з одной заглавною буквою, а потім через CSS зробити стилі -->
@@ -128,6 +130,7 @@
                 width="370"
                 height="294"
               />
+              <p class="whatwedo-paragraph">Десктопні додатки</p>
             </li>
             <li class="whatwedo-item">
               <img
@@ -136,6 +139,7 @@
                 width="370"
                 height="294"
               />
+              <p class="whatwedo-paragraph">Мобільні додатки</p>
             </li>
             <li class="whatwedo-item">
               <img
@@ -144,6 +148,7 @@
                 width="370"
                 height="294"
               />
+              <p class="whatwedo-paragraph">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -445,5 +450,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
